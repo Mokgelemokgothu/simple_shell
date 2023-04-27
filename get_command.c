@@ -1,7 +1,8 @@
 #include "shell.h"
 
 /**
- * _getline_command - print "#cisfun$ " and wait for the user type something.
+ * _getline_command - print "#cisfun$ " and wait for the user type something
+ *
  * Return: line of string input for user
  */
 char *_getline_command(void)
@@ -13,7 +14,8 @@ char *_getline_command(void)
   printf("#cisfun$ ");
   read = getline(&line, &len, stdin);
 
-  if (read == -1) {
+  if (read == -1)
+  {
     perror("getline");
     exit(EXIT_FAILURE);
   }

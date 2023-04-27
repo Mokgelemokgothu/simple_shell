@@ -10,7 +10,7 @@ char *_get_path(char **env)
 {
 	size_t index = 0, val = 0, count = 5;
 	char *path = NULL;
-	
+
     /* Search for the PATH variable in the environment */
 	for (index = 0; _strncmp(env[index], "PATH="); index++)
 	;
@@ -19,7 +19,7 @@ char *_get_path(char **env)
 
 	for (count = 5; env[index][val]; val++, count++)
 	;
-	path = malloc(sizeof(char) *(count + 1));
+	path = malloc(sizeof(char) * (count + 1));
 
 	if (path == NULL)
 	/* PATH variable not found in environment */
