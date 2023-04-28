@@ -24,7 +24,7 @@ int _fork_fun(char **path, char **prog,
 		if (execve(path[0], path, env) == -1)
 		{
 			fprintf(stderr, format, prog[0], idp, path[0]);
-			if (!c)
+			if (!ch_tst)
 				free(path[0]);
 			free(path);
 			free(user_input);

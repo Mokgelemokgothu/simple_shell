@@ -13,8 +13,8 @@ int main(int count, char **arg, char **env)
   char *getcommand = NULL;
   char **user_command = NULL;
   int pathValue = 0;
-  _exit = 0;
-  n = 0;
+  int _exit = 0;
+  int n = 0;
 	(void)count;
 
 	while (1)

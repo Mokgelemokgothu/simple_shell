@@ -25,7 +25,7 @@ char *_get_path(char **env)
 	if (path == NULL)
 		return (NULL);
 
-	for (path_val = 5, count = 0; env[index][path_val]; path_val++, path_lent++)
+	for (path_val = 5, path_len = 0; env[index][path_val]; path_val++, path_len++)
 		path[path_len] = env[index][path_val];
 
 	path[path_len] = '\0';

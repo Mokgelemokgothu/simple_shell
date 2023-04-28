@@ -16,7 +16,7 @@ int _values_path(char **user_coms, char **env)
 	size_t command;
 	struct stat stat_lineptr;
 
-	if (stat(*com, &stat_lineptr) == 0)
+	if (stat(*user_coms, &stat_lineptr) == 0)
 		return (-1);
 	path_val = _get_path(env);
 	if (!path_val)

@@ -39,6 +39,6 @@ void _getenv(char **env)
 	{
 		write(STDOUT_FILENO, env[num], _strnlen(env[num]));
 		write(STDOUT_FILENO, "\n", 1);
-		rtn++;
+		num++;
 	}
 }
