@@ -8,19 +8,21 @@
  */
 void _exit_command(char **ptr, char *lineptr, int _exit)
 {
-	int exit_status = 0;
+	int exit_status;
 
-	if (!ptr[1])
+	exit staus = 0;
+
+	if (!ptr[1]) /* If there's only one argument, exit with the default status */
 	{
 		free(lineptr);
 		free(ptr);
 		exit(_exit);
 	}
-	exit_status = atoi(ptr[1]);
+	exit_status = atoi(ptr[1]i; /* Convert the second argument to an integer */
 
 	free(lineptr);
 	free(ptr);
-	exit(exit_status);
+	exit(exit_status); /* Exit with the specified status */
 }
 
 /**
