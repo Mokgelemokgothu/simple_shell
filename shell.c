@@ -1,15 +1,20 @@
 #include "shell.h"
+
 /**
- * main - main arguments functions
- * @count:count of argumnents
- * @arg: arguments
- * @env: environment
+ * main - function entry
+ * @count: number of argumnents
+ * @arg: arguments passed into program
+ * @env: environmental variable
+ *
  * Return: _exit = 0.
  */
 int main(int count, char **arg, char **env)
 {
-	char *getcommand = NULL, **user_command = NULL;
-	int pathValue = 0, _exit = 0, n = 0;
+  char *getcommand = NULL;
+  char **user_command = NULL;
+  int pathValue = 0;
+  _exit = 0;
+  n = 0;
 	(void)count;
 
 	while (1)
